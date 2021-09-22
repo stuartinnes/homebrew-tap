@@ -5,29 +5,29 @@
 class Randstr < Formula
   desc "a Go random string generator"
   homepage "https://github.com/stuartinnes/randstr"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.0/randstr_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "cac56e89cbbf98ced581f687d69b27fc2270d1b17ced0a476c8ea9a41492beaa"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "ef6db9489bd90dcc66e3c6fc319b03ae4960685591128c85bdf8ab7f1edc9f5d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.0/randstr_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "1f27d6e9471eafff69826aa7d3362fe71debef8cfe558daa77c9293b5a070a83"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "918e1c9a16602e905f10e94ccc6be76dd64151181d79191bb5b97400e7172e39"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.0/randstr_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "597a573d63b6ff52671521568e10c86914437887c9d38c5683d1cd7763d7dbe2"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "8efa6c404c9758bd8b1b09811aa96b2461acd5f7b4738a13c0b70ec6314ab5a7"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.0/randstr_0.1.0_Linux_arm64.tar.gz"
-      sha256 "014d3ec7778f9239fc29a652f44fb5def9326fd49d3d40252552945dd60c4c7f"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Linux_arm64.tar.gz"
+      sha256 "0f9a67d1af43e6f930866c82322c3a147a5a3ef64b28091d71e8b25e4d0ae736"
     end
   end
 
