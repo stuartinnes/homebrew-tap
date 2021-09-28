@@ -5,29 +5,29 @@
 class Randstr < Formula
   desc "a Go random string generator"
   homepage "https://github.com/stuartinnes/randstr"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "ef6db9489bd90dcc66e3c6fc319b03ae4960685591128c85bdf8ab7f1edc9f5d"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.2/randstr_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "97bff25818cf2d226635ebb4d41ba5e5ec09cb5b4378989f06650dbb73aa059a"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "918e1c9a16602e905f10e94ccc6be76dd64151181d79191bb5b97400e7172e39"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.2/randstr_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "1753c4c2f97e2d8674f8362013e839f42d4acf0b853cfb03fcf722fee32ffd9f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "8efa6c404c9758bd8b1b09811aa96b2461acd5f7b4738a13c0b70ec6314ab5a7"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.2/randstr_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "49696a20e3428c51ffdfb0c1e7edfe4a1cb017c04b0d2b39e330318d30e08073"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.1/randstr_0.1.1_Linux_arm64.tar.gz"
-      sha256 "0f9a67d1af43e6f930866c82322c3a147a5a3ef64b28091d71e8b25e4d0ae736"
+      url "https://github.com/stuartinnes/randstr/releases/download/v0.1.2/randstr_0.1.2_Linux_arm64.tar.gz"
+      sha256 "b8a810948776bb87f31951f84f9976e344ef773f1b00bc6aa4c66e9cac7df904"
     end
   end
 
@@ -36,6 +36,6 @@ class Randstr < Formula
   end
 
   test do
-    system "#{bin}/randstr, -h"
+    system "#{bin}/randstr -h"
   end
 end
