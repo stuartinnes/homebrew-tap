@@ -12,22 +12,22 @@ class Stringthing < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stuartinnes/stringthing/releases/download/v0.1.0/stringthing_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "6ef259875fa255de3e111b865c392ac1f72a0bdf937d79790be7e3c033e2c806"
+      sha256 "c27d227a496b18eb9a154e4d39ea53f5e1e647ab8cdce69db2847db93c31f433"
     end
     if Hardware::CPU.arm?
       url "https://github.com/stuartinnes/stringthing/releases/download/v0.1.0/stringthing_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "a41b6dc102335c123c12318cdaedc48fd0b75ae0f8ed4eb47f5f794352fbd05d"
+      sha256 "5d8cc53398a2dd022119c01d290525b31d7c037a0b9248587a1644e86fd2c85a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/stuartinnes/stringthing/releases/download/v0.1.0/stringthing_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "045006d75c861433feade7b57e1dd7dd1c32af7b68aef4afd49f6443eab097b8"
+      sha256 "1bf3ee677d253256a7936cd5347e6253a44568294fe837ff80d3e1df72e9df4d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/stuartinnes/stringthing/releases/download/v0.1.0/stringthing_0.1.0_Linux_arm64.tar.gz"
-      sha256 "92e4a14979d87332bcf5c8eb5f0b8540b71673c4b5efe1b6bb84fe331aa300a2"
+      sha256 "20030daa95b5537b548750cd56c65e8899ba58afd02d5a3e71c9950decf305ef"
     end
   end
 
